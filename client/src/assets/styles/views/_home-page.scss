@@ -1,0 +1,25 @@
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    padding: rem(20px);
+    width: 140px;
+
+    @include for-normal-layout {
+        width: auto;
+    }
+}
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include for-normal-layout {
+        height: 86vh;
+    }
+}
+
+

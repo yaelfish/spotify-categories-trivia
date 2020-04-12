@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: montserrat;
+    line-height: 1.6;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    background-color: $navy;
+    color: $white;
+}
+
+ul {
+    list-style: none;
+    text-decoration: inherit;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: rem(40px);
+    margin-bottom: rem(10px);
+}
+
+p {
+    margin: 0 0 rem(12px);
+    max-width: 60ch;
+}

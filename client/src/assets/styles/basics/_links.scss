@@ -1,0 +1,8 @@
+a {
+    color: $white;
+    font-size: 1.4rem;
+    &.router-link-active {
+        color: $green;
+    }
+}
+

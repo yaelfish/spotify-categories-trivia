@@ -1,0 +1,20 @@
+// Setup
+@import "setup/variables.scss";
+@import "setup/functions.scss";
+@import "setup/mixins.scss";
+
+// Basics
+@import "basics/helpers.scss";
+@import "basics/layout.scss";
+@import "basics/base.scss";
+@import "basics/links.scss";
+@import "basics/buttons.scss";
+@import "basics/typography.scss";
+
+// Components
+@import "components/main-nav.scss";
+@import "components/card.scss";
+@import "components/footer";
+
+// Pages 
+@import "views/game";

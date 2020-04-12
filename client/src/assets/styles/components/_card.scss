@@ -1,0 +1,33 @@
+.card {
+    color: $blue;
+    transition: background-color 0.3s;
+    cursor: pointer;
+
+    img {
+        border-radius: 5px;
+        border: 2px solid;
+    }
+}
+
+li.artist-option {
+    min-width: 17vw;
+    padding: 3px;
+    border: 1px solid;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px 1px $black;
+
+    @include for-normal-layout {
+        display: inline-block;
+    }
+}
+
+.audio-container {
+    padding: 5%;
+    background-color: $green;
+    opacity: 0.9;
+    margin: 5% 0;
+    border-radius: 7px;
+    border: 3px dashed;
+}
