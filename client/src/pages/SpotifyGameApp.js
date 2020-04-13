@@ -102,7 +102,6 @@ class spotifyGameApp extends Component {
         return (
             <div className="App">
                 {!loggedIn && <a href='http://localhost:8888' > Login to Spotify </a>}
-                {/* <p >{username}</p> */}
                 <div className="username">
                     <select defaultValue={username}
                         onChange={this.handleChange}
