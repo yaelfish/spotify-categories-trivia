@@ -1,6 +1,7 @@
 export default {
     getRandomId,
     getRandomInt,
+    generateRandomString,
     getHashParams
 };
 
@@ -18,6 +19,26 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
 
+/**
+ * Generates a random string containing numbers and letters
+ * @param  {number} length The length of the string
+ * @return {string} The generated string
+ */
+function generateRandomString(strLength) {
+    let text = '';
+    let possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+    for (let i = 0; i < strLength; i++) {
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+    }
+    
+    return text;
+};
+
+/**
+* Obtains parameters from the hash of the URL
+* @return Object
+*/
 function getHashParams() {
     var hashParams = {};
     var e, r = /([^&;=]+)=?([^&;]*)/g,

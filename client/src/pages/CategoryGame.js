@@ -125,15 +125,15 @@ export default class CategoryGame extends Component {
             </div>
 
             {!trackPlaying && <button onClick={this.pickASong}>Start</button>}
-            {trackPlaying && <AudioPlayer
-                src={trackPlaying.track.preview_url}
-            />}
-            {trackPlaying &&
+            {trackPlaying && <>
+                <AudioPlayer
+                    src={trackPlaying.track.preview_url}
+                />
                 <ArtistList
                     artists={artists}
                     artist={currArtists}
                     updateScore={this.updateScore}
-                />
+                /></>
             }
         </div>)
     }

@@ -7,7 +7,12 @@ function load(key) {
     return JSON.parse(str);
 }
 
+function remove(key) {
+    localStorage.removeItem(key);
+}
+
 export default{
     store,
-    load
+    load,
+    remove
 }

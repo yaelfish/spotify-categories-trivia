@@ -4,7 +4,6 @@ import { createBrowserHistory } from 'history';
 import SpotifyGameApp from './pages/SpotifyGameApp';
 import Home from './pages/Home';
 import CategoryGame from './pages/CategoryGame';
-// import Footer from './cmps/Footer';
 import NavBar from './cmps/NavBar';
 
 import './assets/styles/global.scss';
@@ -23,7 +22,6 @@ export default function App() {
           <Route component={CategoryGame} path="/category" />
         </Switch>
       </Router>
-      {/* <Footer /> */}
     </div>
   );
 }
